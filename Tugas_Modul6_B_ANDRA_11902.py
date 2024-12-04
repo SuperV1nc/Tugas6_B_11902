@@ -7,6 +7,15 @@ from PIL import Image
 model = load_model(r'model_mobilenet.h5')
 class_names = ['Matang', 'Mentah']
 
+import streamlit as st 
+import tensorflow as tf 
+import numpy as np 
+from tensorflow.keras.models import load_model
+from PIL import Image
+
+model = load_model(r'D:\UAJY Kuliah Andra 220711902\Matkul\Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam B\7 Convolution Neural Network\Tugas6_B_11902\model_mobilenet.h5')
+class_names = ['Matang', 'Mentah']
+
 def classify_image(image_path):
     try:
         input_image = tf.keras.utils.load_img(image_path, target_size=(180, 180))
