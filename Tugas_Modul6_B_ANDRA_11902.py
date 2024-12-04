@@ -37,7 +37,7 @@ def custom_progress_bar(confidence, color1, color2):
     """
     st.sidebar.markdown(progress_html, unsafe_allow_html=True)
     
-st.title("Prediksi Kematangan Buah Naga - 1842")
+st.title("Prediksi Kematangan Buah Naga - 11902")
 
 uploaded_files = st.file_uploader("Unggah Gambar (Beberapa diperbolehkan)", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
 
